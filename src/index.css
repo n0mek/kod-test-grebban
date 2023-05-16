@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: 'Open sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background: #82ff9e;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.App {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+h1 {
+  margin: 0;
+}
+.board {
+  position: relative;
+  padding: 0;
+}
+.tile {
+  position: absolute;
+  list-style: none;
+  background: #0E6BA8;
+  border: 0.5px solid #fff;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+}
+button {
+  display: block;
+  padding: 5px 20px;
+  font-size: 22px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  background: #058C42;
+  border: 0.5px solid #fff;
+}
