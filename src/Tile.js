@@ -4,7 +4,7 @@ import { getMatrixPosition, getVisualPosition } from "./helpers";
 import { TILE_COUNT, GRID_SIZE, BOARD_WIDTH, BOARD_HEIGHT } from "./constants"
 
 function Tile(props) {
-  const { tile, index, width, height, handleTileClick, imgUrl } = props;
+  const { tile, index, width, height, handleTileClick} = props;
   const { row, col } = getMatrixPosition(index);
   const visualPos = getVisualPosition(row, col, width, height);
   const tileStyle = {
@@ -30,7 +30,9 @@ function Tile(props) {
           className="tile"
           id={`${tile === TILE_COUNT - 1 ? 'lastTile' : ''}`}
           onClick={() => handleTileClick(index)}
-        />
+        >
+          {`${tile + 1}`}
+        </li>
       )}
     </Motion>
   );
