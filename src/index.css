@@ -19,6 +19,7 @@ code {
 }
 h1 {
   margin: 0;
+  font-size: 28px;
 }
 .board {
   position: relative;
@@ -41,4 +42,10 @@ button {
   font-family: 'Open Sans', sans-serif;
   background: #058C42;
   border: 0.5px solid #fff;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
 }
